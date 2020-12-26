@@ -12,6 +12,7 @@
 	float: left;
 	border-right: 1px solid #605b5b;
 	border-left: 1px solid #2b2a2a;
+	position: relative;
 }
 
 #wrapper li:last-child{
@@ -36,4 +37,38 @@
 	
 	color:#fff;
 	background-color: orange;
+}
+
+
+#wrapper li ul{
+	list-style-type: none;
+	padding: 0;
+	position: absolute;
+	left: -9999px;
+	/*transition: 0.5s all ease;*/
+}
+
+#wrapper li:hover ul{
+	left:0;
+}
+
+#wrapper li ul li{
+	float: none;
+	border-right:none;
+	border-left:none;
+	border-top: 1px solid #605b5b;
+	border-bottom: 1px solid #2b2a2a;
+	width:95px;
+	position: relative;
+}
+
+#wrapper li ul li ul{
+	position:absolute;
+	top: -9999px;
+	/*transition: 0.5s all ease;*/
+}
+
+#wrapper li ul li:hover ul{
+	top:0;
+	left: 95px;
 }

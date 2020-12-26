@@ -1,0 +1,44 @@
+*{margin:0; padding: 0;}
+
+.wrapper{
+	width:960px;
+	margin:50px auto;
+}
+
+.mydiv{
+	width:300px;
+	float:left;
+	margin-right:30px;
+}
+
+.no-margin{
+margin-right:0px; 
+}
+
+.mydiv img{
+	width:300px;
+	height:200px;
+}
+
+.mydiv h2{
+	color:blue;
+}
+
+.mydiv p{
+	text-align: justify;
+	font-weight: bolder;
+}
+
+.mydiv a{
+	text-align: center;
+	text-decoration: none;
+	background-color: blue;
+	display: block;
+	color:white;
+	padding: 5px;
+}
+
+.mydiv a:hover{
+	background-color: orange;
+	color:black;
+}
