@@ -1,0 +1,77 @@
+.mydiv{
+	display:inline-block;
+	height:200px;
+	width:200px;
+	background-color: red;
+	animation-name:emran;
+	animation-duration: 3s;
+	animation-iteration-count: 3;
+	animation-delay: 2s;
+}
+
+@keyframes emran{
+	from{background-color: red;}
+	to{background-color: blue;
+		border-radius: 50%;
+	}
+}
+
+.div1{
+	height:200px;
+	width:200px;
+	background-color: blue;
+	display:inline-block;
+
+	animation-name: emran1;
+	animation-duration: 4s;
+	animation-iteration-count:5;
+}
+
+@keyframes emran1{
+	0%{
+		background-color: red;
+	}
+
+	20%{
+		background-color: yellow;
+		border-radius: 50%;
+	}
+
+	40%{
+		background-color: black;
+	}
+
+	60%{
+		background-color: pink;
+
+		height: 250px;
+		width: 250px;
+	}
+
+	80%{
+		background-color: cyan;
+	}
+
+	100%{
+		background-color: blue;
+	}
+}
+
+.div2{
+	height: 200px;
+	width: 200px;
+	background-color: magenta;
+	position: relative;
+
+	animation-name: emran2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	/*animation-direction: reverse;*/
+	animation-direction: alternate;
+
+}
+
+@keyframes emran2{
+	from{ left:0; }
+	to{ left:200px; }
+}
