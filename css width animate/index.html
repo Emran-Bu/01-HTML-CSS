@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            width: 500px;
+            height: 500px;
+            background: brown;
+            /* animation-name: alt; */
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            position: relative;
+            transition: 0.3s all ease;
+            overflow: hidden;
+        }
+
+        @keyframes alt{
+            form{
+               
+                width: 500px;
+            }
+
+            40%{width: 300px;}
+
+            to{
+                width: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="color">
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+    </div>
+    <button class="btn1">Click</button>
+    <button class="btn2">Click</button>
+
+    <script>
+
+        var color = document.querySelector('.color')
+
+        var maxWidth = 500
+        document.querySelector('.btn1').addEventListener
+        ('click', function() {
+
+            var clear = setInterval(() => {
+                color.style.width = maxWidth + "px"
+                maxWidth--
+
+                if (maxWidth < 0) {
+                    clearInterval(clear)
+                }
+            }, 5);
+            
+        })
+
+        document.querySelector('.btn2').addEventListener('click', function() {
+           var clear2 = setInterval(() => {
+                color.style.width = maxWidth + "px"
+                maxWidth++
+
+                
+            if (maxWidth >= 500) {
+                clearInterval(clear2)
+            }
+
+            }, 5);
+
+        })
+
+    </script>
+</body>
+</html>
