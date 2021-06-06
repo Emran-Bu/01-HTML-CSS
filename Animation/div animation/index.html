@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .wrapper{
+            width: 550px;
+            margin: 0 auto;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .imgDiv1{
+            position: relative;
+        }
+
+
+
+
+
+
+        /* before after */
+
+        /*  */
+
+        .div1{
+            height: 150px;
+            width: 150px;
+            position: relative;
+            overflow: hidden;
+          
+        }
+
+        .div1 img{
+            width: 150px;
+            height: 150px;
+        }
+
+        .div1::before{
+            content: '';
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            height: 150px;
+            width: 150px;
+            top: 0;
+            left: -50%;
+            transition: 1s all ease;
+        }
+
+        .div1:hover:before{
+            left: -100%;
+        }
+
+        
+        .div1::after{
+            content: '';
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            height: 150px;
+            width: 150px;
+            top: 0;
+            right: -50%;
+            transition: 1s all ease;
+        }
+
+        .div1:hover::after{
+            right: -100%;
+        }
+
+
+        /* 2nd img */
+
+        .beforeAfter{
+            display: flex;
+        }
+
+        .div2{
+            margin-left: 20px;
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+
+        .div2 img{
+            width: 150px;
+            height: 150px;
+        }
+
+        .div2::before{
+            content: '';
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            width: 150px;
+            height: 150px;
+            top: 0;
+            left: -100%;
+            transition: 1s all ease;
+        }
+
+        .div2:hover::before{
+            left: -50%;
+        }
+
+        .div2::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 150px;
+            height: 150px;
+            transition: 1s all ease-out;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .div2:hover::after{
+            right: -50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="imgDiv1">
+                <div class="inner1ImgDiv1"></div>
+                <img src="28.JPG" alt="" height="300px" width="300px">
+                <div class="inner2ImgDiv1"></div>
+            </div>
+
+            <div class="imgDiv2">
+                <div class="inner1ImgDiv2"></div>
+                <img src="22.jpg" alt="" height="300px" width="300px">
+                <div class="inner2ImgDiv2"></div>
+            </div>
+        </div>
+
+        <div class="beforeAfter">
+            <div class="div1">
+                <img src="22.jpg" alt="">
+            </div>
+
+            <div class="div2">
+                <img src="28.JPG" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
