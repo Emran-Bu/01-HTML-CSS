@@ -13,16 +13,139 @@
 
         .container{
             display: flex;
+            margin-bottom: 20px;
         }
 
         .imgDiv1{
+            margin-right: 20px;
             position: relative;
+            background: url('28.JPG');
+            height: 250px;
+            width: 300px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
         }
 
+        .inner1ImgDiv1{
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 50%;
+            top: 0;
+            left: 0;
+            transition: 1s all ease;
+            border-right: 1px solid #fff;
 
+            /*  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .imgDiv1:hover .inner1ImgDiv1{
+            left: -50%;
+        }
 
+        .inner1ImgDiv1 a{
+            color: white;
+            text-decoration: none;
+            background: rgb(255, 0, 255);
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
 
+        .inner2ImgDiv1{
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 50%;
+            transition: 1s all ease;
+            border-left: 1px solid #FFF;
+        }
+
+        .imgDiv1:hover .inner2ImgDiv1{
+            right: -50%;
+        }
+
+        /* 2nd img */
+
+        .imgDiv2{
+            position: relative;
+            background: url('22.JPG');
+            height: 250px;
+            width: 300px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .inner1ImgDiv2{
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            top: 0;
+            left: -50%;
+            background: rgba(0, 0, 0, 0.5);
+            transition: 1s all ease;
+            border-right: 1px solid white;
+
+            /*  */
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imgDiv2:hover .inner1ImgDiv2{
+            left: 0;
+        }
+
+        .inner1ImgDiv2 a{
+            position: absolute;
+            color: white;
+            text-decoration: none;
+            background: yellowgreen;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            
+        }
+
+        .inner2ImgDiv2{
+            background: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 50%;
+            right: -50%;
+            position: absolute;
+            border-left: 1px solid white;
+            transition: 1s all ease;
+
+            /*  */
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imgDiv2:hover .inner2ImgDiv2{
+            right: 0;
+        }
+
+        .inner2ImgDiv2 a{
+            position: absolute;
+            color: white;
+            text-decoration: none;
+            background: yellowgreen;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
 
         /* before after */
 
@@ -127,15 +250,23 @@
     <div class="wrapper">
         <div class="container">
             <div class="imgDiv1">
-                <div class="inner1ImgDiv1"></div>
-                <img src="28.JPG" alt="" height="300px" width="300px">
-                <div class="inner2ImgDiv1"></div>
+                <div class="inner1ImgDiv1">
+                    <a href="http://127.0.0.1:5500/">Code</a>
+                </div>
+
+                <div class="inner2ImgDiv1">
+                    <a href="http://127.0.0.1:5500/">Code</a>
+                </div>
             </div>
 
             <div class="imgDiv2">
-                <div class="inner1ImgDiv2"></div>
-                <img src="22.jpg" alt="" height="300px" width="300px">
-                <div class="inner2ImgDiv2"></div>
+                <div class="inner1ImgDiv2">
+                    <a href="http://127.0.0.1:5500/" target="_blank">Live</a>
+                </div>
+
+                <div class="inner2ImgDiv2">
+                    <a href="http://127.0.0.1:5500/01-HTML-CSS/Animation/div%20animation/index.html" target="_blank">Demo</a>
+                </div>
             </div>
         </div>
 
