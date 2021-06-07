@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Count Project</title>
+
+    <style>
+
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+           
+        }
+
+        .wrapper{
+            display: flex;
+        }
+
+        .div1{
+            text-align: center;
+            width: 150px;
+        }
+
+        .div2{
+            margin: 0px 10px;
+            text-align: center;
+            width: 150px;
+        }
+
+        .div3{
+            margin-right: 10px; 
+            text-align: center;
+            width: 150px;
+        }
+
+        .div4{
+            margin-right: 10px; 
+            text-align: center;
+            width: 150px;
+        }
+
+
+        /*  */
+
+
+        .count1, .count2, .count3, .count4{
+            animation-name: animate;
+            animation-duration: 1s;
+            transition: 1s all ease;
+            opacity: 1; 
+
+            
+        }
+
+         @keyframes animate{
+            form{
+                opacity: 1;
+            }
+
+            to{
+                opacity: 0;
+            }
+        } 
+
+    #talkbubble {
+        width: 120px;
+        height: 80px;
+        background: red;
+        position: relative;
+        -moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         10px;
+        float:left;
+        margin:20px;
+    }
+
+    #talkbubble:before {
+        content:"";
+        position: absolute;
+        right: 100%;
+        top: 26px;
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-right: 26px solid red;
+        border-bottom: 13px solid transparent;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="wrapper">
+            <div class="div1">
+                <h2><span class="count1">2</span>+</h2>
+                <p>Working of year</p>
+            </div>
+
+            <div class="div2">
+                <h2><span class="count2">6</span>+</h2>
+                <p>Training of Month</p>
+            </div>
+
+            <div class="div3">
+                <h2><span class="count3">3</span>+</h2>
+                <p>Education Experience</p>
+            </div>
+
+            <div class="div4">
+                <h2><span class="count4">8</span>+</h2>
+                <p>Project Complete</p>
+            </div>
+        </div>
+
+        <div id="talkbubble"><span class="count">1421</span></div>
+
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>
