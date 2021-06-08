@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <title>Arrow Animation</title>
+
+    <style>
+        .icon{
+            color: red;
+            font-size: 25px;
+            animation-name: arrow;
+            animation-duration: 2s;
+            animation-delay: .5s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            /* animation-fill-mode: forwards; */
+        }
+
+        @keyframes arrow{
+            0%{
+                margin-top: 50px;
+            }
+
+            50%{
+                margin-top: -80px;
+            }
+
+            70%{
+                margin-top: -120px;
+            }
+
+            100%{
+                margin-bottom: 130px;
+            }
+        }
+
+        .wrapper{
+            width: 400px;
+            margin: 200px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="arrow">
+            <a href="#"><i class="fas fa-angle-double-down icon"></i></a>
+        </div>
+    </div>
+</body>
+</html>
