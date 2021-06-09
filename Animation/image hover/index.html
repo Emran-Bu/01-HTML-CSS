@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image hover</title>
+
+    <style>
+
+        .img1{
+            height: 300px;
+            width: 300px;
+            display: inline-block;
+            border: 5px solid black;
+            
+            overflow: hidden;
+        }
+
+        .img1 img{
+            height: 300px;
+            width: 300px;
+            transition: 1s;
+        }
+
+        .img1 img:hover{
+            transform: scale(1.1)
+        }
+
+        .img2{
+            height: 300px;
+            width: 300px;
+            display: inline-block;
+            border: 5px solid black;
+            
+            overflow: hidden;
+        }
+
+        .img2 img{
+            height: 300px;
+            width: 300px;
+            transition: 1s;
+        }
+
+        .img2 img:hover{
+            transform: scale(1.1)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imgDiv">
+            <div class="img1">
+                <img src="img/36.jpg" alt="">
+            </div>
+
+            <div class="img2">
+                <img src="img/39.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
