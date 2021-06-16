@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .div{
+            margin: 50px;
+        }
+
+        .div1, .div3{
+            width: 30px;
+            height: 2px;
+            display: block;
+            background: #000;
+            margin-top: 3px;
+            transition: 0.3s all ease-in-out;
+        }
+
+        .div2{
+            width: 30px;
+            height: 2px;
+            display: block;
+            background: #000;
+            margin-top: 3px;
+            transition: 0.15s all ease-in-out;
+        }
+
+        .div1.anim1{
+            transform: rotate(45deg);
+            position: absolute;
+            transition: 0.3s all ease-in-out;
+        }
+
+        .div2.anim2{
+            /* display: none; */
+            transform: rotate(45deg);
+            position: absolute;
+            transition: 0.3s all ease-in-out;
+        }
+        
+        .div3.anim3{
+            position: absolute;
+            transform: rotate(-45deg);
+            transition: 0.3s all ease-in-out;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="div">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+    
+    <script>
+        let i = 0;
+        document.querySelector('.div').addEventListener('click', function() {
+            
+            if (i%2==0) {
+                document.querySelector('.div1').classList.add('anim1')
+                document.querySelector('.div2').classList.add('anim2')
+                document.querySelector('.div3').classList.add('anim3')
+                i++
+            } else{
+                document.querySelector('.div1').classList.remove('anim1')
+                document.querySelector('.div2').classList.remove('anim2')
+                document.querySelector('.div3').classList.remove('anim3')
+                i++
+            }
+
+        })
+    </script>
+</body>
+</html>
