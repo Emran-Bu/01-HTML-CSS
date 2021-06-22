@@ -1,0 +1,66 @@
+body #magicMouseCursor {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(226, 88, 88);
+    border-radius: 50%;
+    /* z-index: 9999; */
+    left: 0;
+    top: 0;
+    transition: transform 0.020s , width 0.3s, height 0.3s;
+    pointer-events: none; }
+    body #magicMouseCursor.cursor-square {
+    border-radius: 0; 
+    
+    }
+  
+  body #magicPointer {
+    height: 5px;
+    width: 5px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgb(136, 37, 37);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: background  , width 0.2s, height 0.2s, box-shadow 0.2s; 
+  }
+    body #magicPointer.is-hover {
+      border: none;
+    }
+
+    body  #magicMouseCursor.pointer-blur{
+      border: none;
+      width: 0;
+      height: 0;
+    }
+
+    body #magicMouseCursor.pointer-overlay{
+      border: none;
+      width: 0;
+      height: 0;
+    }
+
+    body #magicPointer.pointer-blur {
+      height: 80px;
+      width: 80px;
+      opacity: 0.3;
+    }
+  
+  body .magic-hover {
+    transition: all 0.2s; }
+    body .magic-hover:hover {
+    /* cursor: none; */
+    
+    }
+
+  body .magic-hover {
+    transition: all 0.2s; }
+    body .magic-hover .magicMouseCursor:hover {
+      /* cursor: none; */
+      border: none;
+    }
+
+    html{
+      /* cursor: pointer; */
+    }
