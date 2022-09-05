@@ -1,0 +1,40 @@
+/*table{
+	border:1px solid blue;
+}*/
+
+.table{
+		width: 500px;
+		height: 200px;
+		text-align: center;
+		border-collapse: collapse;
+		margin: 0 auto;
+		background-color: yellow;
+}
+
+.table th, td{
+	border: 1px solid black;
+}
+
+.table th{
+	background-color: #ddd;
+}
+
+.tfoot{
+	text-align: left;
+}
+
+.tr{
+	background-color: cyan;
+}
+
+.tr1{
+	background-color: #ff9f9f;
+}
+
+.table .foot{
+	background-color: magenta;
+}
+
+.table caption{
+	background-color: lime;
+}
